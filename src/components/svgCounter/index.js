@@ -7,6 +7,7 @@ function SvgComponent(props) {
       viewBox="0 0 1400 788"
       fill="none"
       {...props}
+      className="responsive-img"
     >
       <g id="contador">
         <path id="preto" fill="#000" d="M549 8H920V239H549z" />

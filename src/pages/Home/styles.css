@@ -1,9 +1,27 @@
+.counter{
+ height: 90vh;
+}
+
 .counter svg{
  height: 100%;
- width: 100vw;
+ max-height: 100vh;
+ width: 100%;
+ -webkit-box-shadow: 2px 0px 15px -3px #000000; 
+ box-shadow: 2px 0px 15px -3px #000000;
+}
+
+.buttons{
+ margin-top: 3%;
+}
+
+.buttons button:first-of-type{
+ background-image: url("../../assets//img//background.png");
+ /* background-position: center; */
+ background-size: cover;
+ font-weight: bold;
 }
 
 .counter button{
- width: 90%;
+ width: 98%;
 }
 
