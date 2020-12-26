@@ -69,80 +69,80 @@ function Home() {
 
   return (
     <>
-    <Body darkMod={darkMod} >
-      {/* //Header */}
-      <Navbar
-        alignLinks="right"
-        brand={<Link to="/" className="mine">Contador de episodios</Link>}
-        id="mobile-nav"
-        menuIcon={<Icon>menu</Icon>}
-        options={{
-          draggable: true,
-          edge: 'left',
-          inDuration: 250,
-          onCloseEnd: null,
-          onCloseStart: null,
-          onOpenEnd: null,
-          onOpenStart: null,
-          outDuration: 200,
-          preventScrolling: true
-        }}
-      >
+      <Body darkMod={darkMod} >
+        {/* //Header */}
+        <Navbar
+          alignLinks="right"
+          brand={<Link to="/" className="mine">Contador de episodios</Link>}
+          id="mobile-nav"
+          menuIcon={<Icon>menu</Icon>}
+          options={{
+            draggable: true,
+            edge: 'left',
+            inDuration: 250,
+            onCloseEnd: null,
+            onCloseStart: null,
+            onOpenEnd: null,
+            onOpenStart: null,
+            outDuration: 200,
+            preventScrolling: true
+          }}
+        >
 
-        {darkMod ?
-          <img onClick={() => getDark()} className="responsive-img dark" src={Sun} alt="Noite" title="Amanhecer" />
-          :
-          <img onClick={() => getDark()} className="responsive-img dark" src={Moon} alt="Dia" title="Anoitecer" />
-        }
+          {darkMod ?
+            <img onClick={() => getDark()} className="responsive-img dark" src={Sun} alt="Noite" title="Amanhecer" />
+            :
+            <img onClick={() => getDark()} className="responsive-img dark" src={Moon} alt="Dia" title="Anoitecer" />
+          }
 
-        <a href="https://github.com/rafalmeida73/counter" title="Git Hub">
-          <img className="responsive-img" src={gitHub} alt="GitHub" />
-        </a>
+          <a href="https://github.com/rafalmeida73/counter" title="Git Hub" target="_blank" rel="noopener noreferrer">
+            <img className="responsive-img" src={gitHub} alt="GitHub" />
+          </a>
 
-      </Navbar>
+        </Navbar>
 
-      {/* image */}
-      <div className="counter">
-        <Counter darkMod={darkMod} number1={number1} number2={number2} number3={number3}>
-          <SvgComponent />
-        </Counter>
+        {/* image */}
+        <div className="counter">
+          <Counter darkMod={darkMod} number1={number1} number2={number2} number3={number3}>
+            <SvgComponent />
+          </Counter>
 
 
-        {/* //buttons */}
-        <div className="row">
-          <div className="buttons">
-            <div className="col s12 m12 l6">
-              <Button
-                large
-                node="button"
-                waves="light"
-                onClick={() => addNumber()}
-              >
-                Aumentar
+          {/* //buttons */}
+          <div className="row">
+            <div className="buttons">
+              <div className="col s12 m12 l6">
+                <Button
+                  large
+                  node="button"
+                  waves="light"
+                  onClick={() => addNumber()}
+                >
+                  Aumentar
                 <Icon left>
-                  add
+                    add
                 </Icon>
-              </Button>
-            </div>
+                </Button>
+              </div>
 
-            <div className="col s12 m12 l6">
-              <Button
-                large
-                node="button"
-                waves="light"
-                onClick={() => resetNumber()}
-              >
-                Restaurar
+              <div className="col s12 m12 l6">
+                <Button
+                  large
+                  node="button"
+                  waves="light"
+                  onClick={() => resetNumber()}
+                >
+                  Restaurar
                 <Icon left>
-                  autorenew
+                    autorenew
                 </Icon>
-              </Button>
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-<Footer/>
+        </div>
+        <Footer />
 
       </Body>
     </>
