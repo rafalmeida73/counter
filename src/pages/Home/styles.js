@@ -151,6 +151,17 @@ const Counter = styled.div`
   #g3a1, #g3a2, #g3a3, #g3a5, #g3b1, #g3b2, #g3b5, #g3c1, #g3c2,#g3c3, #g3c4, #g3c5  {
     fill: ${props => (props.number3 === "9" ? '#F2BC79' : '')};
   }
+
+  //lamps
+  #c1g, #c2g, #c2b, #c3g, #c4g, #c5g, #c6g,#c7g, #p1-1g, #p1-2g, #p1-3g, #p1-4g, #p2-1g, #p2-2g, #p2-3g, #p2-4g, #p2-5g{
+    fill: ${props => (props.darkMod ? '#F2BC79' : '')};
+  }
+
+  //sky
+  #ceu{
+    fill: ${props => (props.darkMod ? '#000' : '')};
+  }
+
 `;
 
 
