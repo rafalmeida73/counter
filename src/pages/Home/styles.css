@@ -124,5 +124,8 @@ nav ul li a {
   }
 }
 
-@media (min-width: 1600px) {
+@media (max-height: 565px) {
+  .counter{
+    height: 100%;
+  }
 }
